@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bitacora</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="js/login.js"></script>
+  </head>
+  <body>
+
+    <!-- login -->
+    <aside class="loginGeneral">
+      <input id="email2" type="email" placeholder="Ingresa Email" class="emailIngreso">
+      <input id="password2" type="password" placeholder="Ingresa Contraseña" class="passwordIngreso">
+      <button id="ingreso" class="btnIngreso">Acceder</button>
+      <button onclick="abrirRegistro()" class="btnRegistro">Registrar</button>
+      <button id="btn-google" class="btn-google" >Acceder con Google</button>
+      <button id="btn-facebook" class="btn-facebook" >Acceder con Facebook</button>
+    </aside>
+
+    <!-- registro -->
+    <form class="modal">
+      <h5 class="modal-title">Formulario de Registro</h5>
+      <section class="modal-body">
+        <input id="email" type="email" placeholder="Ingresa Email" >
+        <input id="password" type="password" placeholder="Ingresa Contraseña">
+      </section>
+      <aside class="modal-footer">
+        <button onclick="cerrarRegistro()" type="button">Cerrar</button>
+        <button id="registrar" type="button">Guardar</button>
+        <p>Recibirás un correo para confirmar tu cuenta.</p>
+      </aside>
+    </form>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+
+  </body>
+</html>
